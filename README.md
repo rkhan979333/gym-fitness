@@ -42,3 +42,11 @@
 * **Calculator Upgrade:** Implement the more accurate Mifflin-St Jeor equation for BMR calculation.
 * **Advanced Interactivity:** Refactor the navigation to use AJAX/Fetch API to load plan content asynchronously onto the main page, converting the MPA structure to a hybrid or full SPA model.
 * **User Data Persistence:** Introduce a cloud-based backend service (e.g., Firebase, AWS Amplify) to save calculated macro results and plan selections.
+
+## ABOUT :-
+* **Fitness Guide Pro is a multi-page front-end fitness platform designed as an MVP to deliver structured workout guidance and an interactive macronutrient calculator.
+Built with HTML, CSS, and Vanilla JavaScript, it runs entirely in the browser with zero dependencies.
+The app features modular fitness plans and a client-side macro calculator for instant results.
+Its architecture uses separate HTML modules for clarity and easy navigation.
+Future upgrades include improved calculator accuracy, SPA-like dynamic loading, and cloud-based data storage.
+      
