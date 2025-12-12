@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💪 Fitness Guide Pro</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        
+        header {
+            background: var(--text-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+            border-radius: 5px;
+        }
+
+       
+        main {
+            padding: 0;
+        }
+
+        section {
+            padding: 4rem 10%;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        :root {
+            --primary-color: #e53935; 
+            --secondary-color: #4CAF50; 
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        .hero {
+            
+            background: url('https://www.avikalp.com/cdn/shop/products/MWZ3588_wallpaper3.jpg?v=1746037636') no-repeat center center/cover; 
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white;
+            text-align: center;
+            padding: 8rem 10%;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #c62828;
+        }
+
+        
+        .card-section {
+            background-color: var(--bg-color);
+            text-align: center;
+        }
+        
+        #diet-plans {
+            background-color: #fff;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            text-align: left;
+            transition: transform 0.3s;
+            cursor: pointer; 
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+        }
+
+        .card-link {
+            display: none; 
+        }
+        .info-section {
+            background-color: var(--bg-color);
+        }
+
+        .info-section ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-top: 1rem;
+        }
+
+
+        
+        footer {
+            background: var(--text-color);
+            color: #ccc;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+       .container {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    button {
+        background: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+
+    .result-box {
+        margin-top: 20px;
+        background: #e9ffe8;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 5px solid #28a745;
+    }
+    
+
+    
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo">TRAIN THE FIGHTER IN YOU</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#diet-plans">Diet Plans</a></li> 
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Your Ultimate Gym Fitness Guidance</h1>
+            <p>Achieve your fitness goals with expert advice, tailored workout plans, and proven nutrition strategies.</p>
+            <a href="#workouts" class="btn">Start Your Workout</a>
+            
+        </section>
+
+        <section id="workouts" class="card-section">
+            <h2>🏋️‍♂️ Guided Workouts</h2>
+            <div class="card-container">
+                <a href="div1.html" style="text-decoration: none;"><div class="card" data-plan-title="Beginner Full Body Workout" data-plan-info="This 3-day split focuses on compound movements like squats, bench press, and rows to build a solid foundation of strength and muscle mass.">
+                    <h3>Beginner Full Body</h3>
+                    <p>3 days/week. Focus on fundamental movements and building strength.</p>
+                    
+                </div></a>
+                <a href="div2.html" style="text-decoration: none;">
+                <div class="card" data-plan-title="Intermediate PPL Split" data-plan-info="The Push, Pull, Legs (PPL) is a 6-day split designed for rapid muscle hypertrophy. Push days cover chest, shoulders, and triceps. Pull days focus on back and biceps.">
+                    <h3>Intermediate PPL</h3>
+                    <p>6 days/week. Push, Pull, Legs split for dedicated muscle growth.</p>
+                    
+                </div></a>
+                <a href="div3.html" style="text-decoration: none;">
+                <div class="card" data-plan-title="Advanced Cardio Routines" data-plan-info="Includes High-Intensity Interval Training (HIIT) protocols and long-distance endurance running plans. Focus on maximizing cardiovascular output and calorie burn.">
+                    <h3>Advanced Cardio</h3>
+                    <p>High-intensity interval training (HIIT) and endurance routines.</p>
+                    
+                </div></a>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="diet-plans" class="card-section">
+            <h2>🥗 Essential Meal Plans</h2>
+            <div class="card-container">
+                <a href="div4.html" style="text-decoration: none;">
+                <div class="card" data-plan-title="Muscle Gain Diet" data-plan-info="A diet emphasizing a caloric surplus and high protein intake (1g per lb of body weight) to support muscle repair and growth. Focus on lean meats, complex carbohydrates, and healthy fats.">
+                    <h3>Muscle Gain Diet</h3>
+                    <p>High protein, complex carb plan focused on hypertrophy and recovery.</p>
+                    
+                </div>
+                <a href="div5.html" style="text-decoration: none;">
+                <div class="card" data-plan-title="Weight Loss Diet" data-plan-info="This plan maintains a moderate caloric deficit by prioritizing high-volume, low-calorie foods like vegetables and lean proteins. It focuses on satiety to prevent hunger.">
+                    <h3>Weight Loss Diet</h3>
+                    <p>Calorie-controlled plan focused on high volume, low-density foods.</p>
+                    
+                </div></a>
+                <a href="div6.html" style="text-decoration: none;">
+                <div class="card" data-plan-title="Vegetarian Fitness Plan" data-plan-info="A comprehensive plant-based plan ensuring all essential amino acids and micronutrients are met. Includes recipes and sources for complete protein like lentils, beans, and soy.">
+                    <h3>Vegetarian Fitness</h3>
+                    <p>Complete plant-based guide to hitting protein and micronutrient targets.</p>
+                </div></a>
+           
+        </section>
+
+        <section id="nutrition" class="info-section">
+            <h2>🍎 General Nutrition Advice</h2>
+            <p>Fuel your body correctly. We cover macronutrient tracking, hydration tips, and supplement guidance to maximize your gym results.</p>
+            <ul>
+                <li>Macronutrient Calculator</li>
+                <li>High-Protein Recipe Ideas</li>
+                <li>Hydration Tracking Tips</li>
+            </ul>
+        </section> 
+
+
+    <div class="container">
+    <h2>Macronutrient Calculator</h2>
+
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter weight">
+
+    <label>Goal</label>
+    <select id="goal">
+        <option value="maintain">Maintain Weight</option>
+        <option value="loss">Weight Loss</option>
+        <option value="gain">Weight Gain</option>
+    </select>
+
+    <button onclick="calculateMacros()">Calculate</button>
+
+    <div id="result" class="result-box" style="display:none;"></div>
+</div>
+
+<!-- <script>
+function calculateMacros() {
+    let weight = document.getElementById("weight").value;
+    let goal = document.getElementById("goal").value;
+
+    if (weight <= 0) {
+        alert("Please enter a valid weight.");
+        return;
+    }
+
+    // Protein: 2g per kg (general fitness standard)
+    let protein = weight * 2;
+
+    // Fat: 1g per kg
+    let fat = weight * 1;
+
+    // Calories from protein & fat
+    let caloriesFromProtein = protein * 4;
+    let caloriesFromFat = fat * 9;
+
+    // Base Calories (simple estimation)
+    let calories = weight * 30; // maintenance
+
+    if (goal === "loss") calories -= 300;
+    if (goal === "gain") calories += 300;
+
+    // Carbs calories = remaining calories
+    let remainingCalories = calories - (caloriesFromProtein + caloriesFromFat);
+
+    // Carbs in grams
+    let carbs = remainingCalories / 4;
+
+    // Display Results
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML = `
+        <h3>Your Macronutrient Targets</h3>
+        <p><strong>Calories:</strong> ${calories.toFixed(0)} kcal/day</p>
+        <p><strong>Protein:</strong> ${protein.toFixed(0)} g/day</p>
+        <p><strong>Carbohydrates:</strong> ${carbs.toFixed(0)} g/day</p>
+        <p><strong>Fat:</strong> ${fat.toFixed(0)} g/day</p>
+    `;
+}
+</script> -->
+    <footer>
+        <p>&copy; 2024 Fitness Guide Pro. All rights reserved.</p>
+        <p id="contact">Contact: info@fitnessguide.com</p>
+    </footer>
+
+ </body>
+ </html>

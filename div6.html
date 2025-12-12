@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .meal-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.meal-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.meal-card h3 {
+    margin: 15px;
+    color: #222;
+}
+
+.meal-card ul {
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+.meal-card p {
+    margin: 10px 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="meal-plan">
+
+    
+    <div class="meal-card">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=900" alt="Vegetarian Nutrition">
+        <h3>🌱 Daily Macro Targets</h3>
+        <ul>
+            <li>Protein: <strong>1.6–2.2 g per kg</strong> body weight</li>
+            <li>Carbs: High (great for training energy)</li>
+            <li>Fats: Moderate (nuts, seeds, avocado)</li>
+            <li>Fiber: <strong>25–35 g/day</strong></li>
+        </ul>
+        <p>Goal: Build muscle, improve strength, boost recovery.</p>
+    </div>
+
+    
+    <div class="meal-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCAXqFXzNYJp-dMp4N2s7xoFfu3xrRMqkWcw&s" alt="Plant Protein Foods">
+        <h3>🍽️ High-Protein Vegetarian Foods</h3>
+        <p><strong>Top Plant Proteins (per 100g):</strong></p>
+        <ul>
+            <li>Soya chunks – 52g</li>
+            <li>Tempeh – 19g</li>
+            <li>Paneer – 18g</li>
+            <li>Tofu – 15g</li>
+            <li>Lentils (cooked) – 9g</li>
+            <li>Chickpeas (cooked) – 8g</li>
+        </ul>
+        <p><strong>High Protein Snacks:</strong></p>
+        <ul>
+            <li>Greek yogurt / hung curd</li>
+            <li>Peanut butter (moderation)</li>
+            <li>Almonds, cashews, chia, flax, sunflower seeds</li>
+        </ul>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900" alt="Vegetarian Breakfast">
+        <h3>🕗 Breakfast</h3>
+        <ul>
+            <li>Paneer bhurji + oats</li>
+            <li>Tofu scramble wrap</li>
+            <li>Protein smoothie</li>
+        </ul>
+        <p><strong>Protein:</strong> 30–40g</p>
+    </div>
+
+  
+    <div class="meal-card">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2023/11/hard-boiled-eggs-on-avocado-toast-1296x728-header.jpg" alt="Mid-Morning Snack">
+        <h3>🕙 Mid-Morning Snack</h3>
+        <ul>
+            <li>Greek yogurt (150–200g)</li>
+            <li>Fruit (apple, kiwi, berries)</li>
+            <li>Mixed nuts</li>
+        </ul>
+        <p><strong>Protein:</strong> 15–20g</p>
+    </div>
+
+    <div class="meal-card">
+        <img src="https://e7.pngegg.com/pngimages/692/99/png-clipart-delicious-food-food-salad-thumbnail.png" alt="Vegetarian Lunch">
+        <h3>🍛 Lunch</h3>
+        <ul>
+            <li>Rajma or chole with brown rice/roti</li>
+            <li>Paneer tikka + dal</li>
+        </ul>
+        <p><strong>Protein:</strong> 30–40g</p>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://spartannutrition.com/cdn/shop/articles/protein-porridge-2-647e04c2a09b1_1200x1200.png?v=1715695682" alt="Pre Workout Meal">
+        <h3>🏋️‍♂️ Pre-Workout</h3>
+        <ul>
+            <li>Banana / Apple</li>
+            <li>Whole wheat toast + peanut butter</li>
+        </ul>
+        <p>Carbs for energy — not fat storage.</p>
+    </div>
+
+ 
+    <div class="meal-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qpBf78aZsiWf-zZaKQ8HglwsRffQbgnRdMcZmbFi7m7WE4QwRGsc-BlIGB1EllCvWw0&usqp=CAU" alt="Post Workout Plant Protein">
+        <h3>🥤 Post-Workout</h3>
+        <ul>
+            <li>Plant protein shake (25g protein)</li>
+            <li>Dates or fruit for quick carbs</li>
+        </ul>
+        <p>Boosts recovery + muscle repair.</p>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://media.theeverygirl.com/wp-content/uploads/2024/11/easy-dinner-recipes-2025-the-everygirl-4.jpg" alt="Vegetarian Dinner">
+        <h3>🍽️ Dinner</h3>
+        <ul>
+            <li>Grilled tofu + veggies</li>
+            <li>Soya chunks curry + roti</li>
+            <li>Paneer salad bowl</li>
+        </ul>
+        <p><strong>Protein:</strong> ~30g</p>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6FKQzBDWXohQISreVTV6CXv1aqh8BItILQ&s" alt="Bedtime Protein">
+        <h3>🌙 Before Bed</h3>
+        <ul>
+            <li>Casein</li>
+            <li>Milk</li>
+            <li>Greek yogurt</li>
+        </ul>
+        <p>Slow digestion: prevents muscle breakdown overnight.</p>
+    </div>
+
+  
+    <div class="meal-card">
+        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?w=900" alt="Micronutrients for Vegetarians">
+        <h3>🌱 Essential Micronutrients</h3>
+        <ul>
+            <li><strong>Vitamin B12:</strong> Dairy, eggs, supplements</li>
+            <li><strong>Iron:</strong> Spinach, beans, lentils (better with Vitamin C)</li>
+            <li><strong>Omega-3:</strong> Flax, chia, walnuts, algal oil (best)</li>
+        </ul>
+    </div>
+
+ 
+    <div class="meal-card">
+        <img src="https://cdn.prod.website-files.com/62057ffe25307d746ca467c1/65c64f90cab60f4dc6bc4a11_high%20protein%20vegetarian%20meals.png" alt="Vegetarian Fitness Tips">
+        <h3>💪 Muscle Gain Tips (Veg Edition)</h3>
+        <ul>
+            <li>✔ Combine proteins (rice + dal = complete protein)</li>
+            <li>✔ Add soya chunks daily (highest veg protein)</li>
+            <li>✔ Take creatine (100% veg safe)</li>
+            <li>✔ Maintain a surplus of 200–300 calories</li>
+        </ul>
+    </div>
+
+</div>
+
+</html>

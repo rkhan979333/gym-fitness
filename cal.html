@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Macronutrient Calculator</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    button {
+        background: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+
+    .result-box {
+        margin-top: 20px;
+        background: #e9ffe8;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 5px solid #28a745;
+    }
+</style>
+
+
+<div class="container">
+    <h2>Macronutrient Calculator</h2>
+
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter weight">
+
+    <label>Goal</label>
+    <select id="goal">
+        <option value="maintain">Maintain Weight</option>
+        <option value="loss">Weight Loss</option>
+        <option value="gain">Weight Gain</option>
+    </select>
+
+    <button onclick="calculateMacros()">Calculate</button>
+
+    <div id="result" class="result-box" style="display:none;"></div>
+</div>
+
+<script>
+function calculateMacros() {
+    let weight = document.getElementById("weight").value;
+    let goal = document.getElementById("goal").value;
+
+    if (weight <= 0) {
+        alert("Please enter a valid weight.");
+        return;
+    }
+
+    // Protein: 2g per kg (general fitness standard)
+    let protein = weight * 2;
+
+    // Fat: 1g per kg
+    let fat = weight * 1;
+
+    // Calories from protein & fat
+    let caloriesFromProtein = protein * 4;
+    let caloriesFromFat = fat * 9;
+
+    // Base Calories (simple estimation)
+    let calories = weight * 30; // maintenance
+
+    if (goal === "loss") calories -= 300;
+    if (goal === "gain") calories += 300;
+
+    // Carbs calories = remaining calories
+    let remainingCalories = calories - (caloriesFromProtein + caloriesFromFat);
+
+    // Carbs in grams
+    let carbs = remainingCalories / 4;
+
+    // Display Results
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML = `
+        <h3>Your Macronutrient Targets</h3>
+        <p><strong>Calories:</strong> ${calories.toFixed(0)} kcal/day</p>
+        <p><strong>Protein:</strong> ${protein.toFixed(0)} g/day</p>
+        <p><strong>Carbohydrates:</strong> ${carbs.toFixed(0)} g/day</p>
+        <p><strong>Fat:</strong> ${fat.toFixed(0)} g/day</p>
+    `;
+}
+</script>
+
+</body>
+</html>
+ -->

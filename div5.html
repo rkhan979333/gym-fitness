@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .meal-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;display: flex;flex-wrap: wrap;
+}
+
+.meal-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.meal-card h3 {
+    margin: 15px;
+    color: #222;
+}
+
+.meal-card ul {
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+.meal-card p {
+    margin: 10px 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+.info-section {
+    padding: 20px;
+    background:rgba(1, 147, 103, 0.498);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info-section h2 {
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="meal-plan">
+
+
+    <div class="meal-card">
+        <img src="https://www.shutterstock.com/image-photo/healthy-breakfast-egg-avocado-greens-260nw-2600360567.jpg" alt="Healthy Breakfast">
+        <h3>🕗 Meal 1 — Breakfast</h3>
+        <ul>
+            <li>Oats bowl with fruits + chia seeds</li>
+            <li>Egg white omelette (4–5 whites + veggies)</li>
+        </ul>
+        <p><strong>Why?</strong> High fiber + protein → keeps you full longer.</p>
+    </div>
+
+    
+    <div class="meal-card">
+        <img src="https://res.cloudinary.com/jerrick/image/upload/v1639344636/61b669fcfbf249001d9ee3ae.jpg" alt="Healthy Snack">
+        <h3>🕚 Meal 2 — Mid-Morning Snack</h3>
+        <ul>
+            <li>Apple / Orange</li>
+            <li>Air-popped popcorn (3–4 cups)</li>
+            <li>Greek yogurt (100–150g)</li>
+        </ul>
+        <p><strong>Why?</strong> Low calorie crunch + appetite control.</p>
+    </div>
+
+    
+    <div class="meal-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/steak-fajita-power-bowls-socialindex-web-039-lp-del059925-6859858f8a99e.jpg?crop=0.502xw:1.00xh;0.482xw,0&resize=640:*" alt="Healthy Lunch">
+        <h3>🍗 Meal 3 — Lunch (High Volume Plate)</h3>
+        <ul>
+            <li>50% vegetables (broccoli, beans, carrots)</li>
+            <li>30% lean protein (chicken/tofu/paneer)</li>
+            <li>20% whole grains (brown rice / 2 rotis)</li>
+        </ul>
+        <p><strong>Why?</strong> Veggies create fullness with almost no calories.</p>
+    </div>
+
+   
+         <div class="meal-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKXqq-RBkHWIvQn4QUkPUgLBBgvYRvM7FsBEU_nLtRW8Cb8U-F03wkfjoxYHKpuEMKsT0&usqp=CAU" alt="Pre Workout Meal">
+        <h3>🏋️‍♂️ Pre-Workout Snack</h3>
+        <ul>
+            <li>Small banana</li>
+            <li>1 whole wheat toast</li>
+            <li>Any small fruit</li>
+        </ul>
+        <p><strong>Why?</strong> Gives energy without excess calories.</p>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://i.insider.com/5f46c955db1ed0002971418c?width=1200&format=jpeg" alt="Post Workout Protein">
+        <h3>🥤 Post-Workout</h3>
+        <ul>
+            <li>Whey protein shake (20–25g)</li>
+            <li>OR Greek yogurt</li>
+            <li>OR 2–3 boiled eggs</li>
+        </ul>
+        <p><strong>Why?</strong> Protein boosts metabolism + preserves muscle.</p>
+    </div>
+
+
+    <div class="meal-card">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2025/03/Premium-easy-dinner-recipes-e827fb2.jpg" alt="Healthy Dinner">
+        <h3>🍽️ Meal 4 — Dinner</h3>
+        <ul>
+            <li>Big salad bowl (lettuce, cucumber, tomatoes)</li>
+            <li>Veggies + lean protein stir-fry (minimal oil)</li>
+        </ul>
+        <p><strong>Why?</strong> Very filling, very low calorie.</p>
+    </div>
+
+   
+    <div class="meal-card">
+        <img src="https://www.allrecipes.com/thmb/gwKb76VpsUpKVg45-0se9F4q2pA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1049168288-2000-482e9132c6a54271ad71300cd7f39cc3.jpg" alt="Bedtime Snack">
+        <h3>🌙 Before Bed (Optional)</h3>
+        <ul>
+            <li>Herbal tea</li>
+            <li>1 fruit</li>
+            <li>Low-fat yogurt</li>
+        </ul>
+        <p>Avoid heavy foods to keep calories low.</p>
+    </div>
+
+</div>
+
+
+<div class="info-section">
+    <h2>🛒 WEIGHT LOSS GROCERY LIST</h2>
+    <p><strong>Proteins:</strong> Chicken, Eggs, Greek yogurt, Tofu, Paneer, Soya chunks</p>
+    <p><strong>Veggies (Unlimited):</strong> Spinach, Lettuce, Broccoli, Beans, Cucumbers, Zucchini</p>
+    <p><strong>Fruits (2–3/day):</strong> Apple, Orange, Kiwi, Berries, Small banana</p>
+    <p><strong>Complex Carbs:</strong> Oats, Brown rice, Roti, Quinoa</p>
+    <p><strong>Healthy Fats (small amounts):</strong> Olive oil, Peanut butter, Almonds, Walnuts</p>
+</div>
+
+
+<div class="info-section">
+    <h2>🔥 WEIGHT LOSS TIPS</h2>
+    <ul>
+        <li>✔ Stay 200–400 kcal below maintenance</li>
+        <li>✔ Focus on high-volume, low-calorie foods</li>
+        <li>✔ Drink 3–4 liters of water daily</li>
+        <li>✔ Sleep 7–9 hours</li>
+        <li>✔ 10,000 steps daily</li>
+        <li>✔ Avoid sugary drinks</li>
+        <li>✔ Use smaller plates to reduce overeating</li>
+    </ul>
+    <p><strong>Expected Fat Loss:</strong> 0.5–1 kg per week (healthy & sustainable)</p>
+</div>
+
+</body>
+</html>
